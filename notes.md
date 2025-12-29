@@ -10,3 +10,8 @@ This pattern is foundational for developing sophisticated, multi-step Agentic sy
 
 **Rule of thumb:** Use this pattern when a task is too complex for a single prompt, involves multiple distinct processing stages, requires interaction with external tools between steps, or when building Agentic systems that need to perform multi-step reasoning and maintain state.
 
+### Key Takeaways
+- Prompt Chaining breaks down complex tasks into a sequence of smaller, focused steps. This is occasionally known as the Pipeline pattern.
+- Each step in a chain involves an LLM call or processing logic, using the output of the previous step as input.
+- This pattern improves the reliability and manageability of complex interactions with language models.
+- Frameworks like LangChain/LangGraph, and Google ADK provide robust tools to define, manage, and execute these multi-step sequences.
